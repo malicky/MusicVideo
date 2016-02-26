@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1372808C1C7DE754008821CF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1372808B1C7DE754008821CF /* APIManager.swift */; };
 		13DD41A61C7742A30066D69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD41A51C7742A30066D69C /* AppDelegate.swift */; };
 		13DD41A81C7742A30066D69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DD41A71C7742A30066D69C /* ViewController.swift */; };
 		13DD41AB1C7742A30066D69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13DD41A91C7742A30066D69C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1372808B1C7DE754008821CF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		13DD41A21C7742A30066D69C /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DD41A51C7742A30066D69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13DD41A71C7742A30066D69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		13DD41D31C77643A0066D69C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1372808B1C7DE754008821CF /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1372808C1C7DE754008821CF /* APIManager.swift in Sources */,
 				13DD41A81C7742A30066D69C /* ViewController.swift in Sources */,
 				13DD41A61C7742A30066D69C /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +520,7 @@
 				13DD41CC1C7742A30066D69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13DD41CD1C7742A30066D69C /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				13DD41CF1C7742A30066D69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13DD41D01C7742A30066D69C /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				13DD41D21C7742A30066D69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
