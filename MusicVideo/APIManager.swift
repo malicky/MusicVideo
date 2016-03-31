@@ -32,8 +32,8 @@ class APIManager {
                     // Any type of string or value
 //                    NSJSONSerialization requires the Doo / Try / Catch
 //                    Convert the NSData to a JSON object and cast it to a Dictionary,.
-                    if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? [String:AnyObject]
-                    {
+                    if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? JSONDictionary {
+                        
                         print(json)
                         
                         let priority = DISPATCH_QUEUE_PRIORITY_HIGH
@@ -46,8 +46,10 @@ class APIManager {
                     }
                     
                 } catch {
-                    
-                }
+                    dispatch_async(dispatch_get_main_queue()) {
+                        completion(result: "error in NSJSONSerialization")
+                    }
+                } // end of JSONSerialization
             }
         }
 
