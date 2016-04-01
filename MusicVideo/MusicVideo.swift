@@ -12,16 +12,16 @@ class Videos {
 
      // Data encapsulation
     
-    private var _vName = ""
-    private var _vImageUrl = ""
-    private var _vVideoUrl = ""
-    private var _vRights = ""
-    private var _vPrice = ""
-    private var _vArtist = ""
-    private var _vImid = ""
-    private var _vGenre = ""
-    private var _vLinkToiTunes = ""
-    private var _vReleaseDate = ""
+    private var _vName = "N/A Name"
+    private var _vImageUrl = "N/A Image URL"
+    private var _vVideoUrl = "N/A Video URL"
+    private var _vRights = "N/A Studio name"
+    private var _vPrice = "N/A Price"
+    private var _vArtist = "N/A Artist"
+    private var _vImid = "N/A id"
+    private var _vGenre = "N/A Genre"
+    private var _vLinkToiTunes = "N/A Link to iTunes"
+    private var _vReleaseDate = "N/A Release date"
     
     // Make a getter
     
@@ -94,7 +94,7 @@ class Videos {
             _vVideoUrl = vVideoUrl
         }
         
-        // rights
+        // The Studio name
         if let rights = data["rights"] as? JSONDictionary,
             vRights = rights["label"] as? String {
             self._vRights = vRights
