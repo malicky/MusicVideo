@@ -65,6 +65,7 @@ class Videos {
         return _vReleaseDate
     }
     
+    // init
     
     init(data: JSONDictionary) {
         // If we do not initialize all properties we will get error message
@@ -96,12 +97,14 @@ class Videos {
         
         // The Studio name
         if let rights = data["rights"] as? JSONDictionary,
-            vRights = rights["label"] as? String {
+            vRights = rights["label"] as? String
+        {
             self._vRights = vRights
         }
         // price
         if let pr = data["im:price"] as? JSONDictionary,
-            price = pr["label"] as? String {
+            price = pr["label"] as? String
+        {
             _vPrice = price
         }
         
@@ -142,6 +145,5 @@ class Videos {
         {
             _vReleaseDate = date
         }
-        
     }
 }
